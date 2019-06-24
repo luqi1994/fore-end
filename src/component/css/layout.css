@@ -1,0 +1,34 @@
+#root{
+    height: 100%;
+}
+.layout{
+    min-width: 960px;
+    height: 100%;
+    display: flex;
+}
+.nav{
+    height: 100%;
+}
+.menu{
+    width: 160px;
+    height: 100%;
+}
+.nav i{
+    vertical-align: baseline!important;
+}
+.section{
+    width: 100%;
+}
+.header{
+    padding: 22px;
+}
+.content{
+    padding: 0 22px;
+}
+/********** slide-page **********/
+/*.ios{*/
+    /*width: 375px;*/
+    /*height: 667px;*/
+    /*background:url('../../static/img/ios.png') no-repeat;*/
+    /*background-size:100% 100%;*/
+/*}*/
