@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './demo.css'
 
 export class Picker extends Component {
     constructor(props) {
@@ -169,11 +170,11 @@ const style = {
 class Slider extends Component {
     render() {
         return (
-            <div style={{width: '400px', height: '400px'}}>
-                <div style={{paddingBottom: '22px'}}>
-                    ## 移动端滑块
+            <div>
+                <div className={'title'}>
+                    ## 移动端滑块（F12查看）
                 </div>
-                <div style={{backgroundColor:'#eee',borderRadius:'5px',padding:'20px 0'}}>
+                <div className={'slider'}>
                     <Picker ref={com=>this.pic=com} min={0} max={15} step={1}/>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React, { Component,useState } from 'react';
 import { useSprings, animated, interpolate } from 'react-spring'
 import { useGesture } from 'react-use-gesture'
-import './slidePage.css'
+import './demo.css'
 
 const cards = [
     'https://upload.wikimedia.org/wikipedia/en/f/f5/RWS_Tarot_08_Strength.jpg',
@@ -46,7 +46,7 @@ class SlidePage extends Component {
                 <div className={'title'}>
                     ## 3d卡片
                 </div>
-                <div className={'card'}>
+                <div className={'slide-page'}>
                     <Deck/>
                 </div>
             </div>
