@@ -1,11 +1,11 @@
-.title{
+.title {
     padding-bottom: 22px;
     /*font-size: 13px;*/
 }
 
 /**********slide-page**********/
 
-.slide-page{
+.slide-page {
     position: fixed;
     overflow: hidden;
     width: 800px;
@@ -38,15 +38,15 @@
 
 /**********slider**********/
 
-.slider{
+.slider {
     width: 800px;
-    background-color:#f3f3f3;
-    border-radius:5px;
-    padding:20px 0;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 20px 0;
 }
 
 /**********card**********/
-.card_card{
+.card_card {
     width: 750px;
     height: 667px;
     background-color: #f3f3f3;
@@ -70,14 +70,15 @@
     opacity: 1;
 }
 
-.card_div{
+.card_div {
     padding: 15px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 #ddd;
     cursor: grab;
 }
-.card_img{
+
+.card_img {
     width: 100%;
     height: 100%;
     padding: 15px;
@@ -85,4 +86,124 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 #ddd;
     cursor: grab;
+}
+
+/**********compass**********/
+.tai_ji {
+    width: 0;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    border-left: 50px solid #333;
+    border-right: 50px solid #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.tai_ji:before {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: -25px;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 50px 0 #333;
+}
+
+.tai_ji:after {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 20px;
+    left: -5px;
+    z-index: 1;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: 0 50px 0 #fff;
+}
+
+.rotate {
+    transition: 0.5s;
+    transform-origin: center center;
+    animation: rotate 24s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.compass_c1 {
+    width: 260px;
+    height: 260px;
+    background-color: transparent;
+    position: absolute;
+}
+
+.rotate1 {
+    transition: 0.5s;
+    transform-origin: center center;
+    /*animation: rotate1 5s linear infinite;*/
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.compass_c2 {
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+}
+
+.rotate2 {
+    transition: 0.5s;
+    transform-origin: center center;
+    /*animation: rotate2 5s linear infinite;*/
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.compass_c3 {
+    width: 540px;
+    height: 540px;
+    background-color: transparent;
+    position: absolute;
+}
+
+.rotate3 {
+    transition: 0.5s;
+    transform-origin: center center;
+    /*animation: rotate3 2s linear infinite;*/
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }

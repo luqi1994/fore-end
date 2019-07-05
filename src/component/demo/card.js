@@ -64,7 +64,7 @@ class SlideCard extends Component {
                     {
                         cards.map((item, index) => {
                             return (
-                                <img key={index} src={item} className={'card_img'}
+                                <img key={index} src={item} className={'card_img'} alt=''
                                      style={{
                                          width: '225px',
                                          height: '400px',
